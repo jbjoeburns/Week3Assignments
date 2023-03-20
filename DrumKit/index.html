@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drumkit</title>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="background" id="background">
+    <!-- have background visually be something dark, maybe with stars or something in the back, and it beats to the BPM -->
+    <div class="toptext">
+        <h1 class="titledrumkit">My Drumkit!</h1>
+        <h1 class="titledrumkit2" id="contolslink">Controls</h1>
+        <div class="metronomecontainer">
+            <img src="metronome.webp" alt="metronome" class="metronome1" id = "silhouette" style="opacity: 0;">
+            <img src="metronome.webp" alt="metronome" class="metronome2">
+            <div class="inputcontainer">
+                <input type="text" id="myText" value="60">
+            </div>
+            <!-- metronome stuff goes in here, include text for bpm -->
+        </div>
+        <!-- make the controls bit pop up in a window on click, also hyperlink it so it looks clickable -->
+    </div>
+
+    <br>
+    <!-- actual drums go here -->
+    <div class="drumkitwrapper" style = "padding-top: 3%";>
+        <div id="boomdrum" class="drumsingle">
+            <p id="boomdrumtxt">BOOM (D)</p>
+        </div>
+        <div id="clapdrum" class="drumsingle" style = "margin: 4% 7%";>
+            <p id="clapdrumtxt">CLAP (F)</p>    
+        </div>
+        <div id="hihatdrum" class="drumsingle">
+            <p id="hihatdrumtxt">HIHAT (G)</p>
+        </div>
+    </div>
+    <div class="drumkitwrapper">
+        <div id="kickdrum" class="drumsingle" style = "margin: 0 1%; height: 230px; width: 230px;">
+            <p id="kickdrumtxt">KICK (Z)</p>
+        </div>
+        <div id="openhatdrum" class="drumsingle" style = "margin: 4% 1%; height: 230px; width: 230px;";>
+            <p id="openhatdrumtxt">OPENHAT (X)</p>
+        </div>
+        <div id="ridedrum" class="drumsingle" style = "margin: 6% 1%; height: 230px; width: 230px;";>
+            <p id="ridedrumtxt" >RIDE (C)</p>
+        </div>
+        <div id="snaredrum" class="drumsingle" style = "margin: 6% 1%; height: 230px; width: 230px;";>
+            <p id="snaredrumtxt">SNARE (V)</p>
+        </div>
+        <div id="tinkdrum" class="drumsingle" style = "margin: 4% 1%; height: 230px; width: 230px;";>
+            <p id="tinkdrumtxt">TINK (B)</p>
+        </div>
+        <div id="tomdrum" class="drumsingle" style = "margin: 0 1%; height: 230px; width: 230px;">
+            <p id="tomdrumtxt">TOM (N)</p>
+        </div>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>

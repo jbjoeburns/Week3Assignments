@@ -1,0 +1,107 @@
+.background {
+    background-image: url(stars.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+
+.toptext {
+    font-size: medium;
+    padding-left: 45.1%;
+}
+
+.metronomecontainer {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 150px 1fr;
+}
+
+.metronome1 {
+    height: 80px;
+    width: 80px;
+    margin-bottom: -15%;
+    margin-left: -30.25%;
+    padding-left: 5.3%;
+    
+}
+
+.metronome2 {
+    height: 80px;
+    width: 80px;
+    margin-bottom: -15%;
+    padding-left: 5.3%;
+    grid-area: 1 / 1 / 2 / 2;
+    margin-left: 16.2%;
+}
+
+#silhouette {
+    -webkit-filter: contrast(0) sepia(100%) hue-rotate(390deg) saturate(2000%) brightness(100%);
+    filter: contrast(0) sepia(100%) hue-rotate(390deg) saturate(2000%) brightness(100%);
+    opacity: 0;
+  }
+
+.titledrumkit {
+    color: #ffc05a;
+    background-clip: text;
+    width: fit-content;
+
+}
+
+.titledrumkit2 {
+    color: cyan;
+    width: fit-content;
+    font-size: small;
+    padding-left: 6.5%;
+}
+
+.titledrumkit2:hover {
+    animation: 0.5s texthover linear infinite;
+}
+
+@keyframes texthover {
+    to {
+        color: rgb(30, 255, 0);
+    }
+}
+
+.inputcontainer {
+    box-sizing: border-box;
+    margin-top: -30%;
+    margin-left: 16.5%;
+    padding-bottom: 17%;
+}
+
+#myText {
+    box-sizing: border-box;
+    width: 100px;
+    height: 50px;
+    
+}
+
+.drumkitwrapper {
+    width: 100%;
+    margin: -9% auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.drumsingle {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-image: linear-gradient(60deg, #0f0f0f, #cac8c8);
+    border: 15px ridge rgb(37, 37, 37);
+}
+
+.drumsingle p {
+    margin-left: 38%;
+    margin-top: 30%;
+    color: #ffc05a;
+    text-shadow: 1.5px 1.5px #000000;
+}

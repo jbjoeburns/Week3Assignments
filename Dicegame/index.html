@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Dice Game</title>
+</head>
+<body class="background">
+    <h1>DICE GAME</h1>
+    <div class="modeSelectWrapper" id="modeSelectWrapper" style="display: grid";>
+        <div class="cardFall" id="aceClubs">
+            <h2 class="playerSelectText" id="singleplayerSelect">Singleplayer:<br>Set the number of points you need to win, then roll dice until you reach that number</h2>
+        </div>
+        <div class="cardFall" id="twoHearts">
+            <h2 class="playerSelectText" id="multiplayerSelect">Multiplayer:<br>Set the number of points you need to win, each player rolls dice until one reaches that number and wins</h2>
+        </div>
+    </div>
+    <div class="singleplayerScore" id="singleplayerScore" style="display: none;">0</div>
+    <div class="diceSingleplayer" id="diceElement" style="display: none;">
+        <div class="pip" id="pip1" style="display: none;"></div>
+        <div class="pip" id="pip2" style="display: none;"></div>
+        <div class="pip" id="pip3" style="display: none;"></div>
+        <div class="pip" id="pip4" style="display: none;"></div>
+        <div class="pip" id="pip5" style="display: none;"></div>
+        <div class="pip" id="pip6" style="display: none;"></div>
+    </div>
+    <div class="restartButton" id="restartButton" style="display: none;"><p>Restart?</p></div>
+    <div class="player1Score" id="player1Score" style="display: none;">0</div>
+    <div class="diceSingleplayer" id="dicePlayer1" style="display: none;">
+        <div class="pip" id="pip1e1" style="display: none;"></div>
+        <div class="pip" id="pip2e1" style="display: none;"></div>
+        <div class="pip" id="pip3e1" style="display: none;"></div>
+        <div class="pip" id="pip4e1" style="display: none;"></div>
+        <div class="pip" id="pip5e1" style="display: none;"></div>
+        <div class="pip" id="pip6e1" style="display: none;"></div>
+    </div>
+    <div class="player2Score" id="player2Score" style="display: none;">0</div>
+    <div class="diceSingleplayer" id="dicePlayer2" style="display: none;">
+        <div class="pip" id="pip1e2" style="display: none;"></div>
+        <div class="pip" id="pip2e2" style="display: none;"></div>
+        <div class="pip" id="pip3e2" style="display: none;"></div>
+        <div class="pip" id="pip4e2" style="display: none;"></div>
+        <div class="pip" id="pip5e2" style="display: none;"></div>
+        <div class="pip" id="pip6e2" style="display: none;"></div>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
